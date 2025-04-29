@@ -55,22 +55,54 @@ controle if-else.*/
 
 /* Crie um menu interativo no console que oferece ao usuário a escolha de três opções.
 Utilize switch-case para implementar a lógica de cada opção selecionada.*/
-let arr = []
-do {
-    let menu = prompt('escolha uma dessas opções \n 1.cadastrar usuário\n 2.listar usuários \n 3.alterar usuário \n 0.Sair')
-    switch (menu) {
-        case '1':
-            let cadastro = prompt('Digite o nome do usuário: ')
-            arr.push(cadastro)
-            break;
-        case '2':
-            alert(arr)
-            break;
-        case '3':
-            let nomeUsuarioAlterado = prompt('Digite o nome do usuário')
-            let posicaoDoUsuário = Number(prompt('digite a posição do usuário que vc quer trocar: '))
-            arr[posicaoDoUsuário] = nomeUsuarioAlterado
-    
-    
-    }
-} while (menu != 0)
+// let arr = []
+// let menu;
+// do {
+//     menu = prompt('escolha uma dessas opções \n 1.cadastrar usuário\n 2.listar usuários \n 3.alterar usuário \n 0.Sair')
+//     switch (menu) {
+//         case '1':
+//             let cadastro = prompt('Digite o nome do usuário: ')
+//             arr.push(cadastro)
+//             break;
+//         case '2':
+//             alert(arr)
+//             break;
+//         case '3':
+//             let nomeUsuarioAlterado = prompt('Digite o nome do usuário')
+//             let posicaoDoUsuário = Number(prompt('digite a posição do usuário que vc quer trocar: '))
+//             arr[posicaoDoUsuário] = nomeUsuarioAlterado
+//     
+//     
+//     }
+// } while (menu != '0')
+//---------------------------------------------------------------------
+
+/* Escreva um programa que calcula o Índice de Massa Corporal (IMC) de uma pessoa e
+determina a categoria de peso (baixo peso, peso normal, sobrepeso, obesidade)
+utilizando if-else. */
+
+// let peso = parseFloat(prompt('qual é seu peso? '))
+// let altura = parseFloat(prompt('qual a sua altura? '))
+// 
+// let imc = peso / (altura ** 2)
+// 
+// if (imc < 16) {
+//     alert('magresa grave')
+// } else if (imc >= 16 && imc < 17) {
+//     alert('magresa moderada')
+// } else if (imc >= 17 && imc < 18.5) {
+//     alert('magresa leve')
+// } else if (imc >= 18.6 && imc < 24.9) {
+//     alert('peso ideal')
+// } else if (imc >= 25 && imc < 29.9) {
+//     alert('sobrepeso')
+// } else if (imc >= 30 && imc <= 34.9) {
+//     alert('Obesidade grau 1')
+// } else {
+//     alert('Digite caractere válido')
+// }
+
+// ----------------------------------------------
+
+
+
