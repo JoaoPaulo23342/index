@@ -175,3 +175,22 @@ e escreve-los em ordem crescente.*/
 
 //------------------------------------------------
 
+/* Implemente um programa que exibe uma contagem regressiva de 10 até 1 no console
+utilizando um loop for. */ 
+
+// for (i = 10; i >= 1; i--) {
+//     console.log(i)
+// }
+
+// --------------------------
+
+/* Escreva um algoritmo para ler um número inteiro e escrevê-lo na tela 10 vezes.*/
+
+// let numInt = Number(prompt('Digite um numero Inteiro ' ))
+// 
+// for (i = 1; i <= 10; i++) {
+//     console.log(numInt)
+// }
+
+// -------------------------------------------------------
+
