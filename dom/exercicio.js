@@ -139,20 +139,39 @@ Isósceles, escaleno ou eqüilátero.*/
 forem compradas pelo menos doze. Escreva um algoritmo que leia o número de maçãs
 compradas, calcule e escreva o valor total da compra.*/
 
-let macas = 0.30;
-let macasDuzias = 0.25
-let macasCompradas
+// let macas = 0.30;
+// let macasDuzias = 0.25
+// let macasCompradas
+// 
+// do {
+//     macasCompradas = Number(prompt('digite o número de maças que deseja comprar Obs: se quiser sair digite 0  '))
+//     
+//     let total = macas * macasCompradas
+//     let totalFormatado = total.toFixed(2).replace('.', ',')
+//     let macasFormatadas = macas.toFixed(2).replace('.',',')
+//     let macasFormatadasDuzia = macasDuzias.toFixed(2).replace('.',',')
+//     
+//     if(macasCompradas < 12) {
+//         console.log(`o total da compra deu R$${totalFormatado} Reais\n total de maças: ${macasCompradas}\n preço das maças R$${macasFormatadas} Reais `)
+//     } else if (macasCompradas >= 12 ) {
+//         console.log(`o total da compra deu R$${totalFormatado} Reais\n total de maças: ${macasCompradas}\n preço das maças R$${macasFormatadasDuzia} Reais `)
+//     } else {
+//         console.log('digite um caractere válido')
+//     }
+// } while (macasCompradas !== 0)
+// --------------------------------------------------------
 
-do {
-    macasCompradas = Number(prompt('digite o número de maças que deseja comprar Obs: se quiser sair digite 0  '))
-    
-    let total = macas * macasCompradas
-    let totalFormatado = total.toFixed(2).replace('.', ',')
-    let macasFormatadas = macas.toFixed(2).replace('.',',')
-    
-    if(macasCompradas < 12) {
-        console.log(`o total da compra deu R$${totalFormatado} Reais\n total de maças: ${macasCompradas}\n preço das maças ${macas} `)
-    } else if (macasCompradas >= 12 ) {
-        console.log(`o total da compra deu ${totalFormatado} Reais\n total de maças ${macasCompradas}\n preço das maças ${macasDuzias} `)
-    }
-} while (macasCompradas !== 0)
+/*Escreva um algoritmo para ler 2 valores (considere que não serão lidos valores iguais)
+e escreve-los em ordem crescente.*/
+
+// let valor1 = parseInt(prompt("Digite o primeiro valor: "));
+// let valor2 = parseInt(prompt("Digite o segundo valor: "));
+// 
+// if (valor1 < valor2) {
+//     console.log(valor1, valor2);
+// } else {
+//     console.log(valor2, valor1);
+// }
+
+//------------------------------------------------
+
