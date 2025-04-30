@@ -2,15 +2,10 @@
 // npm init
 // npm i prompt-sync
 // ou apenas inicie o arquivo html e descomente o exercicio que quer executar
-// Certifique-se de descomentar a linha 11 se quiser usar o node.js para executar
-
 
 /* Escreva um programa que recebe um numero inteiro e verifica se ele é pár ou
 impar ultilizando uma estrutura de controle if*/
-
-const prompt = require('prompt-sync')()
 //--------------------------------------------------------------------------
-
 // let recebe = Number(prompt('Digite o numero que quer verificar: '))
 // 
 // if (recebe % 2 === 0) {
@@ -24,9 +19,7 @@ const prompt = require('prompt-sync')()
 /*Crie um programa que classifica a idade de uma pessoa em categorias (criança,
 adolescente, adulto, idoso) com base no valor fornecido, utilizando uma estrutura de
 controle if-else.*/
-
 //--------------------------------------------------------------
-// const prompt = require('prompt-sync')()
 // let entrada = Number(prompt('digite sua idade: '))
 // if(entrada <= 10) {
 //     alert('você é criança')
@@ -46,7 +39,6 @@ controle if-else.*/
 "Aprovado", "Recuperação", ou "Reprovado" utilizando if-else if.*/
 // -----------------------------------------------------------------------
 
-// const prompt = require('prompt-sync')()
 // let nota = Number(prompt('digite uma nota de 0 a 10'))
 // 
 // if (nota >= 7) {
@@ -63,7 +55,6 @@ controle if-else.*/
 
 /* Crie um menu interativo no console que oferece ao usuário a escolha de três opções.
 Utilize switch-case para implementar a lógica de cada opção selecionada.*/
-// const prompt = require('prompt-sync')()
 // let arr = []
 // let menu;
 // do {
@@ -89,70 +80,29 @@ Utilize switch-case para implementar a lógica de cada opção selecionada.*/
 /* Escreva um programa que calcula o Índice de Massa Corporal (IMC) de uma pessoa e
 determina a categoria de peso (baixo peso, peso normal, sobrepeso, obesidade)
 utilizando if-else. */
-// const prompt = require('prompt-sync')()
-// let peso = parseFloat(prompt('qual é seu peso? '))
-// let altura = parseFloat(prompt('qual a sua altura? '))
-// 
-// let imc = peso / (altura ** 2)
-// 
-// if (imc < 16) {
-//     console.log('magresa grave')
-// } else if (imc >= 16 && imc < 17) {
-//     console.log('magresa moderada')
-// } else if (imc >= 17 && imc < 18.5) {
-//     console.log('magresa leve')
-// } else if (imc >= 18.6 && imc < 24.9) {
-//     console.log('peso ideal')
-// } else if (imc >= 25 && imc < 29.9) {
-//     console.log('sobrepeso')
-// } else if (imc >= 30 && imc <= 34.9) {
-//     console.log('Obesidade grau 1')
-// } else {
-//     console.log('Digite caractere válido')
-// }
+const prompt = require('prompt-sync')()
+let peso = parseFloat(prompt('qual é seu peso? '))
+let altura = parseFloat(prompt('qual a sua altura? '))
+
+let imc = peso / (altura ** 2)
+
+if (imc < 16) {
+    console.log('magresa grave')
+} else if (imc >= 16 && imc < 17) {
+    console.log('magresa moderada')
+} else if (imc >= 17 && imc < 18.5) {
+    console.log('magresa leve')
+} else if (imc >= 18.6 && imc < 24.9) {
+    console.log('peso ideal')
+} else if (imc >= 25 && imc < 29.9) {
+    console.log('sobrepeso')
+} else if (imc >= 30 && imc <= 34.9) {
+    console.log('Obesidade grau 1')
+} else {
+    console.log('Digite caractere válido')
+}
 
 // ----------------------------------------------
 
-/* Ler três valores para os lados de um triângulo: A, B e C. Verificar se os lados fornecidos
-formam realmente um triângulo. Caso forme, deve ser indicado o tipo de triângulo:
-Isósceles, escaleno ou eqüilátero.*/
 
-// let A = Number(prompt('Digite o primeiro valor do triangulo'))
-// let B = Number(prompt('Digite o segundo valor do triangulo'))
-// let C = Number(prompt('Digite o terceiro valor do triangulo'))
-// 
-// 
-// if (A == B || A == C || B == C) {
-//     console.log('é um triangulo isóceles')
-// } else if (A !== B && B !== C) {
-//     console.log('é um triangulo escaleno')
-// } else if (A === B && B === C) {
-//     console.log('é um triangulo equilatero')
-// }
-// else {
-//     console.log('digite um valor válido')
-// }
- 
-//-----------------------------------------------
 
-/*As maçãs custam R$ 0,30 se forem compradas menos do que uma dúzia, e R$ 0,25 se
-forem compradas pelo menos doze. Escreva um algoritmo que leia o número de maçãs
-compradas, calcule e escreva o valor total da compra.*/
-
-let macas = 0.30;
-let macasDuzias = 0.25
-let macasCompradas
-
-do {
-    macasCompradas = Number(prompt('digite o número de maças que deseja comprar Obs: se quiser sair digite 0  '))
-    
-    let total = macas * macasCompradas
-    let totalFormatado = total.toFixed(2).replace('.', ',')
-    let macasFormatadas = macas.toFixed(2).replace('.',',')
-    
-    if(macasCompradas < 12) {
-        console.log(`o total da compra deu R$${totalFormatado} Reais\n total de maças: ${macasCompradas}\n preço das maças ${macas} `)
-    } else if (macasCompradas >= 12 ) {
-        console.log(`o total da compra deu ${totalFormatado} Reais\n total de maças ${macasCompradas}\n preço das maças ${macasDuzias} `)
-    }
-} while (macasCompradas !== 0)
