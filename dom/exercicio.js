@@ -220,17 +220,22 @@ utilizando um loop for.*/
 
 /*Fazer um algoritmo para receber números decimais até que o usuário digite 0 e fazer
 a média aritmética desses números.*/
-do {
-let num1 = Number(prompt('digite o primeiro numero: '))
-let num2 = Number(prompt('digite o Segundo numero: '))
-let num3 = Number(prompt('digite o Terceiro numero: '))
-let count = 0
-count = count += 3
-let media = (num1 + num2 + num3) / count
-console.log(`a média aritmetica simples = ${media}`)
-let continuar = prompt('deseja continuar? digite 0 para sair ou qualquer caractere para continuar: ')
-
-
-
-} while(continuar !== '0')
-
+// let count = 0;
+// let soma = 0;
+// let continuar;
+// 
+// do {
+//     let num1 = Number(prompt('Digite o primeiro número: '));
+//     let num2 = Number(prompt('Digite o segundo número: '));
+//     let num3 = Number(prompt('Digite o terceiro número: '));
+// 
+//     soma += num1 + num2 + num3;
+//     count += 3;
+// 
+//     let media = soma / count;
+//     console.log(`A média aritmética simples = ${media}`);
+// 
+//     continuar = prompt('Deseja continuar? Digite 0 para sair ou qualquer outro caractere para continuar: ');
+// 
+// } while (continuar !== '0');
+// 
