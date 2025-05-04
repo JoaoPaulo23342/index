@@ -194,3 +194,28 @@ utilizando um loop for. */
 
 // -------------------------------------------------------
 
+/* Escreva um programa que solicita ao usuário 5 números e calcula a soma total
+utilizando um loop for.*/
+
+// for (i = 1; i <= 5; i++) {
+//     let pedir = Number(prompt('Digite um número'))
+//     pedir = pedir
+//     if (i === 5) {
+//         console.log(pedir )
+//     }
+// }
+
+// ---------------------------------------------------------------
+
+/*Crie um programa que exibe a tabuada de um número fornecido pelo usuário (de 1 a
+10) utilizando um loop for.*/
+
+// let num = Number(prompt('Digite o número que vc quer multiplicar até 10: '))
+// 
+// for(i = 1; i <= 10; i++) {
+//     let soma = num * i
+//     console.log(`${num} x ${i} = ${soma}`)
+// }
+//-----------------------------------
+
+
