@@ -244,3 +244,10 @@ a média aritmética desses números.*/
 /*
 Crie um programa que calcula o fatorial de um número fornecido pelo usuário
 utilizando um loop for ou while.*/
+let fatorial = Number(prompt('Digite o numero que vc deseja: '))
+
+for(i = fatorial; i < fatorial; i--) {
+     
+    let op = fatorial * i
+    console.log(op)
+}
