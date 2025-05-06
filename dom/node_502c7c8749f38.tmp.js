@@ -80,29 +80,73 @@ Utilize switch-case para implementar a lógica de cada opção selecionada.*/
 /* Escreva um programa que calcula o Índice de Massa Corporal (IMC) de uma pessoa e
 determina a categoria de peso (baixo peso, peso normal, sobrepeso, obesidade)
 utilizando if-else. */
-const prompt = require('prompt-sync')()
-let peso = parseFloat(prompt('qual é seu peso? '))
-let altura = parseFloat(prompt('qual a sua altura? '))
-
-let imc = peso / (altura ** 2)
-
-if (imc < 16) {
-    console.log('magresa grave')
-} else if (imc >= 16 && imc < 17) {
-    console.log('magresa moderada')
-} else if (imc >= 17 && imc < 18.5) {
-    console.log('magresa leve')
-} else if (imc >= 18.6 && imc < 24.9) {
-    console.log('peso ideal')
-} else if (imc >= 25 && imc < 29.9) {
-    console.log('sobrepeso')
-} else if (imc >= 30 && imc <= 34.9) {
-    console.log('Obesidade grau 1')
-} else {
-    console.log('Digite caractere válido')
-}
+// const prompt = require('prompt-sync')()
+// let peso = parseFloat(prompt('qual é seu peso? '))
+// let altura = parseFloat(prompt('qual a sua altura? '))
+// 
+// let imc = peso / (altura ** 2)
+// 
+// if (imc < 16) {
+//     console.log('magresa grave')
+// } else if (imc >= 16 && imc < 17) {
+//     console.log('magresa moderada')
+// } else if (imc >= 17 && imc < 18.5) {
+//     console.log('magresa leve')
+// } else if (imc >= 18.6 && imc < 24.9) {
+//     console.log('peso ideal')
+// } else if (imc >= 25 && imc < 29.9) {
+//     console.log('sobrepeso')
+// } else if (imc >= 30 && imc <= 34.9) {
+//     console.log('Obesidade grau 1')
+// } else {
+//     console.log('Digite caractere válido')
+// }
 
 // ----------------------------------------------
+// 
+// let numeros = [10,3,5,3,5,3,2,1,1,4]
+// let soma = 0
+// numeros.forEach((ev) => {
+//     soma += ev
+// })
+// 
+// let media = soma / numeros.length
+// 
+// 
+// 
+// let pares = [];
+// 
+// numeros.forEach(ev => { 
+//     if (ev % 2 === 0) { 
+//         pares.push(ev);
+//     } else {
+//         console.log(`${ev} é ímpar`);
+//     }
+// });
+// console.log("a soma é: " + soma)
+// console.log("a média é: " + media)
+// console.log("Números pares:", pares);
 
 
+// 
+// for (let i = 0; i < numeros.length - 1; i++) {  
+//     for (let j = 0; j < numeros.length - 1 - i; j++) {  
+//         if (numeros[j] > numeros[j + 1]) {  
+//             let temp = numeros[j];  
+//             numeros[j] = numeros[j + 1];  
+//             numeros[j + 1] = temp;  
+//         }  
+//     }  
+// }  
+// 
+// console.log(numeros); 
 
+let lista = ['preto', 'branco', 'vermelho']
+
+for(i = 0; i < lista.length; i++) {
+    console.log(lista[i])
+}
+
+for(let i in lista) {
+    console.log(lista[i])
+}
