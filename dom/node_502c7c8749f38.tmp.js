@@ -141,12 +141,85 @@ utilizando if-else. */
 // 
 // console.log(numeros); 
 
-let lista = ['preto', 'branco', 'vermelho']
+// let lista = ['preto', 'branco', 'vermelho']
+// 
+// for(i = 0; i < lista.length; i++) {
+//     console.log(lista[i])
+// }
+// 
+// for(let i in lista) {
+//     console.log(lista[i])
+// }
 
-for(i = 0; i < lista.length; i++) {
-    console.log(lista[i])
+
+
+
+// const numeros = [10,9,8,7,6,5,4,3,2,1]
+// 
+// const soma = numeros.reduce((acumulador, valor) => 
+//     acumulador + valor, 0
+// )
+// 
+// const media = soma / numeros.length
+// 
+// const pares = numeros.filter(num => num % 2 === 0 )
+// 
+// console.log(soma)
+// console.log(media)
+// console.log(pares)
+
+let listarCoisas = []
+
+listarCoisas['hardware'] = Array()
+
+listarCoisas['hardware'][0] = 'placa de vídeo'
+
+listarCoisas['hardware'][1] = 'notebook'
+listarCoisas['filmes'] = Array()
+listarCoisas['filmes'][0] = 'senhor dos aneis'
+listarCoisas['filmes'][1] = 'sla'
+console.table(listarCoisas['filmes'][0])
+
+function parOuImpar(num) {
+    if (num % 2 === 0) {
+        return 'par' 
+    } else {
+        return 'impar'
+    }
+
+
+} 
+let impar = parOuImpar(3)
+
+console.log(impar)
+arr = [10,3,6,7,32,4]
+function bubbleSort() {
+     let result = arr.sort((a, b) => a - b)
+    return console.log(result)
+}
+bubbleSort()
+
+let test = function () {
+    console.log('teste')
 }
 
-for(let i in lista) {
-    console.log(lista[i])
+test()
+
+function showFunction(sucessCallback, erroCallBack) {
+    if(false) {
+        sucessCallback('sucess')
+    } else {
+        erroCallBack('error')
+    }
 }
+
+let sucessCallback = (message) => {
+    console.log(message)
+
+}
+
+let erroCallBack = function (message) {
+    console.log(message)
+}
+
+showFunction(sucessCallback, erroCallBack)
