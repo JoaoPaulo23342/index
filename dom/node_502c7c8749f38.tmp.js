@@ -223,3 +223,24 @@ let erroCallBack = function (message) {
 }
 
 showFunction(sucessCallback, erroCallBack)
+
+
+function somaDosElementos(arr) {
+    let soma = 0
+    for(i=0; i < arr.length; i++) {
+       soma += arr[i]
+    }
+    return soma
+}
+console.log(somaDosElementos([3,3]))
+let m = 0
+function maior(arr) {
+    for(i = 0; i < arr.length; i++) {
+        if(arr[i] > m) {
+            m = arr[i]
+        }
+    }
+    return m
+}
+
+console.log(maior([3,4,56,200]))
