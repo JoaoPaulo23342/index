@@ -245,12 +245,31 @@ a média aritmética desses números.*/
 Crie um programa que calcula o fatorial de um número fornecido pelo usuário
 utilizando um loop for ou while.*/
 
-let fatorial = Number(prompt('Digite o numero que vc deseja: '));
-let resultado = 1;
+// let fatorial = Number(prompt('Digite o numero que vc deseja: '));
+// let resultado = 1;
+// 
+// for(let i = fatorial; i > 0; i--) {
+//     resultado *= i;
+//     console.log(`Multiplicando por ${i}: ${resultado}`);
+// }
+// 
+// console.log(`O fatorial de ${fatorial} é ${resultado}`);
 
-for(let i = fatorial; i > 0; i--) {
-    resultado *= i;
-    console.log(`Multiplicando por ${i}: ${resultado}`);
+// -----------------------------------------------------------------
+
+
+/*Escreva um programa que gera e imprime os primeiros 10 números da sequência de
+Fibonacci utilizando um loop for.*/
+let a = 0, b = 1;
+
+console.log(a); 
+console.log(b); 
+
+for (let i = 2; i < 11; i++) {
+    let temp = a + b;
+    console.log(temp);
+    a = b;
+    b = temp;
 }
 
-console.log(`O fatorial de ${fatorial} é ${resultado}`);
+// Eu consegui gyro a Formula da Rotação Áurea
